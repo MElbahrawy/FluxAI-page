@@ -17,6 +17,7 @@ p {
 }
 .background-holder img {
     width: 100%;
+    min-height: 100vh;
     object-fit: cover;
     opacity: 0.2;
     position: fixed;
