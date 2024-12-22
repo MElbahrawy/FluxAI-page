@@ -1,116 +1,133 @@
-* {
-    box-sizing: border-box;
+main {
+  color: white;
+  background-color: #000;
+  z-index: -2;
 }
-body {
-    background-color: #000000;
-    color: white;
-    overflow-x: hidden !important;
-}
-p {
-    font-weight: 300;
-    font-size: 17px;
-    line-height: 27px;
+main p {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 27px;
 }
 .background-holder {
-    position: relative;
-    z-index: -1;
+  position: relative;
+  z-index: 0;
 }
 .background-holder img {
-    width: 100%;
-    min-height: 100vh;
-    object-fit: cover;
-    opacity: 0.2;
-    position: fixed;
-    top: 0;
-    left: 0;
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+  opacity: 0.2;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
 .hero-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .hero-container p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #ceff2b;
-    font-weight: 200;
-    letter-spacing: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #4eca78;
+  font-weight: 200;
+  letter-spacing: 5px;
 }
 .hero-container h1 {
-    font-size: 5rem;
-    font-weight: 700;
-    background: linear-gradient(to right, #11ab44 0%, #ceff2b 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #b847ff 0%, #5de5ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 .description {
-    background: linear-gradient(
-        180deg,
-        rgba(151, 164, 190, 0.16) 0%,
-        rgba(93, 105, 128, 0.16) 24%,
-        rgba(93, 105, 128, 0.16) 100%
-    );
-    padding: 25px 40px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    text-align: center;
+  background: linear-gradient(
+    180deg,
+    rgba(151, 164, 190, 0.16) 0%,
+    rgba(93, 105, 128, 0.16) 24%,
+    rgba(93, 105, 128, 0.16) 100%
+  );
+  padding: 25px 40px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-align: center;
 }
 .buttons button {
-    background-color: #25a75b;
-    border: none;
-    color: white;
+  background-color: #25a75b;
+  border: none;
+  color: white;
 }
 .buttons button:hover {
-    background-color: #4eca78;
-    border: none;
-    color: white;
+  background-color: #4eca78;
+  border: none;
+  color: white;
 }
 .terminal-container {
-    margin: 0;
-    padding: 0;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 16px;
-    line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .terminal {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 2px solid #333;
-    background-color: #111;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #333;
+  background-color: #111;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
 }
 
 .command {
-    color: #00ff00;
+  color: #00ff00;
 }
 
 .response {
-    color: #fff;
+  color: #fff;
 }
 .header h3 {
-    font-weight: 500;
-    color: #11ab44;
+  font-weight: 500;
+  color: #b847ff;
+}
+#how-it-works .tutorial {
+  width: 50%;
+  z-index: 9;
+  background-color: #000;
+  position: relative;
+  border-color: #000 !important;
+}
+@media (max-width: 768px) {
+  #how-it-works .tutorial {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  #how-it-works .tutorial {
+    width: 75%;
+  }
 }
 #call-to-action {
-    min-height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #call-to-action h2 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    font-weight: 1000;
-    background: linear-gradient(to right, #11ab44 0%, #ceff2b 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 1000;
+  background: linear-gradient(to right, #b847ff 0%, #5de5ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
