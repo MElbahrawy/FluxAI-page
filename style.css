@@ -107,16 +107,17 @@ main p {
   position: relative;
   border-color: #000 !important;
 }
-@media (max-width: 768px) {
-  #how-it-works .tutorial {
-    width: 100%;
-  }
-}
 @media (max-width: 991px) {
   #how-it-works .tutorial {
     width: 75%;
   }
 }
+@media (max-width: 768px) {
+  #how-it-works .tutorial {
+    width: 100%;
+  }
+}
+
 #call-to-action {
   min-height: 40vh;
   display: flex;
