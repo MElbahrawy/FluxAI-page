@@ -41,33 +41,62 @@
             </h1>
           </div>
         </div>
-        <div class="row align-items-center">
-          <div class="col-md-6" data-aos="zoom-in">
-            <p class="text-center">
-              Flux makes it easy for anyone to use Linux by converting plain
-              language into precise commands. Empower your workflow and unlock
-              Linux's full potential!
-            </p>
-            <div class="buttons d-flex justify-content-center">
-              <button class="btn">Try Flux Now</button>
+        <div id="about" class="mb-5">
+          <div class="row align-items-center">
+            <div class="col-sm-4 col-md-6" data-aos="zoom-in">
+              <p class="text-center">
+                Flux makes it easy for anyone to use Linux by converting plain
+                language into precise commands. Empower your workflow and unlock
+                Linux's full potential!
+              </p>
+              <div class="buttons d-flex justify-content-center">
+                <button class="btn">Try Flux Now</button>
+              </div>
+            </div>
+            <div
+              class="col-sm-8 col-md-6 p-2 terminal-container"
+              data-aos="zoom-in"
+            >
+              <div class="terminal" data-aos="fade-left" data-aos-delay="600">
+                <div>
+                  <span class="command">root@FluxAI:~#</span>
+                  <span class="command">flux who is your owner</span>
+                </div>
+                <div class="response">
+                  Getting guides for: 'who is your owner'...<br />
+                  Executing commands...<br />
+                  CloudJet is my owner<br />
+                  FluxAI is an AI assistant developed by CloudJet.
+                </div>
+                <br />
+                <div>
+                  <span class="command">root@FluxAI:~#</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 p-2 terminal-container">
-            <div class="terminal" data-aos="flip-up">
-              <div>
-                <span class="command">root@FluxAI:~#</span>
-                <span class="command">flux who is your owner</span>
+          <div class="row align-items-center">
+            <div class="col-sm-8 col-md-6 p-2 terminal-container">
+              <div
+                data-aos="fade-right"
+                data-aos-delay="600"
+                class="tutorial mt-5 rounded mx-auto"
+              >
+                <video
+                  class="w-100 rounded"
+                  src="assets/flux.mp4"
+                  autoplay
+                  muted
+                  loop
+                ></video>
               </div>
-              <div class="response">
-                Getting guides for: 'who is your owner'...<br />
-                Executing commands...<br />
-                CloudJet is my owner<br />
-                FluxAI is an AI assistant developed by CloudJet.
-              </div>
-              <br />
-              <div>
-                <span class="command">root@FluxAI:~#</span>
-              </div>
+            </div>
+            <div class="col-sm-4 col-md-6" data-aos="zoom-in">
+              <p class="text-center">
+                <strong>Using Flux is simple!</strong> just type your request in
+                plain language, and Flux instantly translates it into accurate
+                Linux commands. Execute them directly
+              </p>
             </div>
           </div>
         </div>
@@ -125,17 +154,17 @@
                   it all.</span
                 >
               </li>
-              <li class="" data-aos="fade-right" data-aos-delay="1100">
+              <li class="" data-aos="fade-right" data-aos-delay="1000">
                 <img
                   width="24"
                   height="24"
                   src="https://img.icons8.com/ffffff/ios/50/strength.png"
                   alt="strength"
                 />
-                <strong class="">Empowers Beginners: </strong
+                <strong class="">Included for Free: </strong
                 ><span
-                  >Learn Linux commands while getting your tasks done
-                  effortlessly.</span
+                  >Flux comes bundled with your server at no additional
+                  cost!</span
                 >
               </li>
             </ul>
@@ -177,19 +206,6 @@
               </div>
             </div>
           </div>
-          <div
-            data-aos="fade-left"
-            data-aos-delay="700"
-            class="tutorial border mt-5 rounded mx-auto"
-          >
-            <video
-              class="w-100"
-              src="assets/flux.mp4"
-              autoplay
-              muted
-              loop
-            ></video>
-          </div>
         </div>
         <div
           class="my-5"
@@ -204,13 +220,19 @@
             Start simplifying your Linux journey today!
           </h5>
           <div class="buttons mt-5 d-flex justify-content-center">
-            <button class="btn">Try Flux Now</button>
+            <button class="btn m-0">
+              <a
+                href="https://store.cloudjet.org/index.php/store/linux-server"
+                class="btn text-light"
+                >Try Flux Now</a
+              >
+            </button>
           </div>
         </div>
       </div>
 
       <footer class="mt-5">
-        <p class="text-center m-0">&copy; 2025 CloudJet</p>
+        <p class="text-center p-0">&copy; 2025 CloudJet</p>
       </footer>
     </main>
   </body>
@@ -220,8 +242,8 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="test.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>

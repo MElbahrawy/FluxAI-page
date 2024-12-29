@@ -42,6 +42,7 @@ main p {
 .hero-container h1 {
   font-size: 5rem;
   font-weight: 700;
+  line-height: 1;
   background: linear-gradient(to right, #b847ff 0%, #5de5ff 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -99,27 +100,15 @@ main p {
 }
 .header h3 {
   font-weight: 500;
-  color: #b847ff;
+  color: #4eca78;
 }
-#how-it-works .tutorial {
-  width: 50%;
+#about .tutorial {
+  width: 100%;
   z-index: 9;
-  background-color: #000;
+  box-shadow: 0 -5px 10px rgba(0, 255, 0, 0.2);
   position: relative;
-  border-color: #000 !important;
 }
-@media (max-width: 991px) {
-  #how-it-works .tutorial {
-    width: 75%;
-  }
-}
-@media (max-width: 768px) {
-  #how-it-works .tutorial {
-    width: 100%;
-  }
-}
-
-#call-to-action {
+.about > #call-to-action {
   min-height: 40vh;
   display: flex;
   flex-direction: column;
